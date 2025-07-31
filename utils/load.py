@@ -16,7 +16,7 @@ def save_to_csv(df, filename="products.csv"):
 
 def save_to_google_sheets(df, spreadsheet_id, range_name, service_file="google-sheets-api.json"):
     try:
-        creds = Credentials.from_service_account_file(os.getenv(service_file))
+        creds = Credentials.from_service_account_file(service_file) # Load credentials from service account json file
         service = build("sheets", "v4", credentials=creds)
         values = [df.columns.tolist()] + df.values.tolist()
         service.spreadsheets().values().update(
