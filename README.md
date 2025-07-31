@@ -38,8 +38,8 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
 ### 1. Kloning Repositori
 
 ```bash
-git clone <URL_REPOSITORI_ANDA>
-cd <NAMA_DIREKTORI_PROYEK>
+git clone https://github.com/drewjd27/submission-pemda
+cd submission-pemda
 ```
 
 ### 2. Buat dan Aktifkan Lingkungan Virtual
